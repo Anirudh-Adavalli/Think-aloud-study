@@ -13,15 +13,17 @@ public class BicycleWheel {
 	}
 	
 	static float arrayAverage(BicycleWheel[] array) {
-			int counter = 0;
-			float sum = 0;
+		int counter = 0;
+		float sum = 0;
 
-			while (counter < array.length) {
-				sum = sum + array[counter].radiusInInch;
-				counter = counter + 1;
-			}
+		while (counter < array.length) {
+			sum = sum + array[counter].radiusInInch;
+			counter = counter + 1;
+		}
 
-			float average = sum / (float) counter;
-			return average;
+		float average = sum / (float) counter;
+		return average;
 	}
 }
+
+// average of 1, 3, 5, 7 is 4
