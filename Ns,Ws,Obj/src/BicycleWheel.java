@@ -1,14 +1,17 @@
-import static java.util.*;
 
 public class BicycleWheel {
 	float radiusInInch;
 	
+	BicycleWheel(float radius){
+		radiusInInch = radius;
+	}
+	
 	public static void main(String args[]) {
 		BicycleWheel[] array = new BicycleWheel[4];
-		array[0].radiusInInch = 1;
-		array[1].radiusInInch = 3;
-		array[2].radiusInInch = 5;
-		array[3].radiusInInch = 7;
+		array[0] = new BicycleWheel(1);
+		array[1] = new BicycleWheel(3);
+		array[2] = new BicycleWheel(5);
+		array[3] = new BicycleWheel(7);
 		System.out.println(arrayAverage(array));
 	}
 	

@@ -1,14 +1,17 @@
-import static java.util.*;
 
 public class Sound {
 	int frequencyInHertz;
 	
+	Sound(int frequency){
+		frequencyInHertz = frequency;
+	}
+	
 	public static void main(String args[]) {
 		Sound[] array = new Sound[4];
-		array[0].frequencyInHertz = 8;
-		array[1].frequencyInHertz = 10;
-		array[2].frequencyInHertz = 6;
-		array[3].frequencyInHertz = 16;
+		array[0] = new Sound(8);
+		array[1] = new Sound(10);
+		array[2] = new Sound(6);
+		array[3] = new Sound(16);
 		System.out.println(arrayAverage(array));
 	}
 	

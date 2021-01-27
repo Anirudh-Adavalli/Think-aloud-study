@@ -1,14 +1,17 @@
-import static java.util.*;
 
 public class Rotation {
 	int byDegree;
 	
+	Rotation(int degree){
+		byDegree = degree;
+	}
+	
 	public static void main(String args[]) {
 		Rotation[] array = new Rotation[4];
-		array[0].byDegree = 90;
-		array[1].byDegree = 270;
-		array[2].byDegree = 180;
-		array[3].byDegree = 360;
+		array[0] = new Rotation(90);
+		array[1] = new Rotation(270);
+		array[2] = new Rotation(180);
+		array[3] = new Rotation(360);
 		System.out.println(reverseArray(array));
 	}
 	

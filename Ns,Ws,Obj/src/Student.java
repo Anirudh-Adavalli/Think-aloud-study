@@ -1,15 +1,17 @@
-import static java.util.*;
 
 public class Student {
-	int age;
 	String residentCity;
+	
+	Student(int currentAge, String city){
+		residentCity = city;
+	}
 	
 	public static void main(String args[]) {
 		Student[] array = new Student[4];
-		array[0].residentCity = "Chemnitz";
-		array[1].residentCity = "Meerane";
-		array[2].residentCity = "Chemnitz";
-		array[3].residentCity = "Borna";
+		array[0] = new Student("Chemnitz");
+		array[1] = new Student("Meerane");
+		array[2] = new Student("Chemnitz");
+		array[3] = new Student("Borna");
 		System.out.println(removeDuplicate(array));
 	}
 

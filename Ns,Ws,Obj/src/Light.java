@@ -1,21 +1,24 @@
-import static java.util.*;
 
 public class Light {
-	float illuminance;
+	float illuminanceInLux;
+	
+	Light(float illuminance){
+		illuminanceInLux = illuminance;
+	}
 	
 	public static void main(String args[]) {
 		Light[] array = new Light[4];
-		array[0].illuminance = 50;
-		array[1].illuminance = 80;
-		array[2].illuminance = 50;
-		array[3].illuminance = 150;
+		array[0] = new Light(50);
+		array[1] = new Light(80);
+		array[2] = new Light(50);
+		array[3] = new Light(150);
 		System.out.println(removeDuplicate(array));
 	}
 	
 	static float[] removeDuplicate(Light array[]) {			
 		float[] values = new float[array.length];
 		for(int i = 0; i < array.length; i++) {
-			values[i] = array[i].illuminance;
+			values[i] = array[i].illuminanceInLux;
 		}	
 		Arrays.sort(values);
 			

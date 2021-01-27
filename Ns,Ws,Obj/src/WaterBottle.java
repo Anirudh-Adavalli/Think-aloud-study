@@ -1,14 +1,17 @@
-import static java.util.*;
 
 public class WaterBottle {
 	float contentInLiter;
 	
+	WaterBottle(float content){
+		contentInLiter = content;
+	}
+	
 	public static void main(String args[]) {
 		WaterBottle[] array = new WaterBottle[4];
-		array[0].contentInLiter = 1.0;
-		array[1].contentInLiter = 1.5;
-		array[2].contentInLiter = 2.0;
-		array[3].contentInLiter = 0.5;
+		array[0] = new WaterBottle(1.0);
+		array[1] = new WaterBottle(1.5);
+		array[2] = new WaterBottle(1.0);
+		array[3] = new WaterBottle(0.5);
 		System.out.println(reverseArray(array));
 	}
 	
