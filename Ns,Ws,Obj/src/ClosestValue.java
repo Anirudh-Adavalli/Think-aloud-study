@@ -21,8 +21,8 @@ public class ClosestValue {
 	public static void main(String[] args) {
 		
 		int array[] = {1,3,4,7,10};
-		int serachValue = 11;
-		System.out.println(findClosest(array, serachValue));
+		int searchValue = 11;
+		System.out.println(findClosest(array, searchValue));
 
 	}
 
