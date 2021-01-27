@@ -16,13 +16,13 @@ public class ArrayReverse {
 
 	public static void main(String[] args) {
 		int array[] = {23,37,26,43, 68};
-		
 		int reversedArray[] = reverseNumberArray(array);
-		
 		for(int k = 0; k <= reversedArray.length - 1; k++) {
         	System.out.println(reversedArray[k]);
         }
-		
 	}	
-
 }
+
+
+
+

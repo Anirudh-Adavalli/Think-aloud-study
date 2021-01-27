@@ -19,15 +19,12 @@ public class RemoveDuplicates {
 		}
 
 	public static void main(String[] args) {
-		
 		int array[] = {3,7,9,9,3};
-		
-		System.out.println(removeDuplicateNumber(array));
-		
 		int newArray[] = removeDuplicateNumber(array);
 		for(int k = 0; k <= newArray.length - 1; k++) {
         	System.out.println(newArray[k]);
 		}
+	}
+}
 
-}
-}
+
