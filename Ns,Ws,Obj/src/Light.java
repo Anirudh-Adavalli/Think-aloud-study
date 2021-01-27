@@ -1,3 +1,4 @@
+import java.util.Arrays;
 
 public class Light {
 	float illuminanceInLux;
@@ -12,7 +13,12 @@ public class Light {
 		array[1] = new Light(80);
 		array[2] = new Light(50);
 		array[3] = new Light(150);
-		System.out.println(removeDuplicate(array));
+		float[] result = removeDuplicate(array);
+		for(int i = 0; i < result.length; i++){
+			if(result[i] == 0)
+				break;
+			System.out.println(result[i]);
+		}
 	}
 	
 	static float[] removeDuplicate(Light array[]) {			

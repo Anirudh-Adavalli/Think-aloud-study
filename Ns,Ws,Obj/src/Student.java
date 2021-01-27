@@ -1,8 +1,9 @@
+import java.util.Arrays;
 
 public class Student {
 	String residentCity;
 	
-	Student(int currentAge, String city){
+	Student(String city){
 		residentCity = city;
 	}
 	
@@ -12,7 +13,12 @@ public class Student {
 		array[1] = new Student("Meerane");
 		array[2] = new Student("Chemnitz");
 		array[3] = new Student("Borna");
-		System.out.println(removeDuplicate(array));
+		String[] result = removeDuplicate(array);
+		for(int i = 0; i < result.length; i++){
+		    if(result[i] == null)
+		        break;
+			System.out.println(result[i]);
+		}
 	}
 
 	static String[] removeDuplicate(Student array[]) {

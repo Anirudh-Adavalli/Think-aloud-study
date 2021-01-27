@@ -12,7 +12,10 @@ public class Rotation {
 		array[1] = new Rotation(270);
 		array[2] = new Rotation(180);
 		array[3] = new Rotation(360);
-		System.out.println(reverseArray(array));
+		array = reverseArray(array);
+		for(int i = 0; i < array.length; i++){
+			System.out.println(array[i].byDegree);
+		}
 	}
 	
 	static Rotation[] reverseArray(Rotation array[]) { 
