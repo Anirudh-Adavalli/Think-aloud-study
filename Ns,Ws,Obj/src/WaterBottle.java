@@ -1,8 +1,8 @@
 
 public class WaterBottle {
-	float contentInLiter;
+	double contentInLiter;
 	
-	WaterBottle(float content){
+	WaterBottle(double content){
 		contentInLiter = content;
 	}
 	
@@ -10,9 +10,12 @@ public class WaterBottle {
 		WaterBottle[] array = new WaterBottle[4];
 		array[0] = new WaterBottle(1.0);
 		array[1] = new WaterBottle(1.5);
-		array[2] = new WaterBottle(1.0);
+		array[2] = new WaterBottle(2.0);
 		array[3] = new WaterBottle(0.5);
-		System.out.println(reverseArray(array));
+		array = reverseArray(array);
+		for(int i = 0; i < array.length; i++){
+			System.out.println(array[i].contentInLiter);
+		}
 	}
 	
 	static WaterBottle[] reverseArray(WaterBottle array[]) { 
